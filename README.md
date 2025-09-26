@@ -26,4 +26,8 @@ margin: Add a margin to create space around the floated element.
 **display: flex;**: Modern layout techniques, like using display: flex` on a parent container, can also be used to arrange elements side-by-side. 
 
 
-[Dont use it as a mobile nav]
+[Dont use it as a mobile nav not footer]
+
+The <aside> represents sidebar content related to the main article.
+
+Inside it, each <div> (.sidebar-section) is a stylized section of that sidebar (one for author info, one for related links).
