@@ -24,3 +24,6 @@ Adjust with Other CSS Properties:
 width: You might set a specific width for the aside.
 margin: Add a margin to create space around the floated element.
 **display: flex;**: Modern layout techniques, like using display: flex` on a parent container, can also be used to arrange elements side-by-side. 
+
+
+[Dont use it as a mobile nav]
