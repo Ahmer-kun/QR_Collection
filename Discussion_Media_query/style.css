@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+
+    Responsive Designs in websites means your websit response when the screen size changes.
+    How to trigger responsive designs?? 
+    Media Queries help trigger the responsive design.
+    What are Media Queries??
+    They are the breakpoints also called screen sizes
+    Standrard breakpoints?
+    - 1200px and > - Desktops / Laptops
+    - 991px - Tablets
+    - 768px - Small Tablets or Mobile with Landscape Orientation
+    - 575px - Mobile devices
+    - 425px / 375px Etc.
+    - 320px Smallets Mobile
+
+    How to Write Media Query??
+
+    @media only screen and - This part is constant
+
+    (max-width: 1200px) means apply my css on this screen size and smaller than this size
+    
+    (min-width: 1200px) means apply my css on this screen size and larger than this size
+
+
+
+*/
+
+
+h1{
+    font-size: 70px;
+    line-height: 90px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* 
+
+    Parent  - Apply flex it will put all his child in one row
+    when flex is applied on parent it automatically apply align-items: stretch 
+
+    align-items: has 3 optoins [flex-start, flex-end & stretch]
+    align-items controls the child's vertical position
+    if set to flex-start all child will start from top 
+    if set to flex-END all child will start from bottom 
+    if set to stretch if one child has any height then the rest of the childs will be stretched to match that height
+
+
+    align-items deals with vertical positions of the child where as justify content controls the horizontal positions of the childs
+
+    justify content come with many options [flex-start, flex-end, center, space-between, space-around, etc]
+    by default when you app;ly flex on parent , justify-content is set to flex-start
+
+    Childs
+
+*/
+
+.box{
+    width: 25%;
+    border: 2px solid magenta;
+    height: 200px;
+}
+
+.one{
+    background-color: orange;
+    /* height: 100px; */
+
+}
+.two{
+    background-color: palevioletred;
+    /* height: 200px; */
+    /* height: 200px; */
+}
+.three{
+    background-color: greenyellow;
+    /* height: 300px; */
+}
+.four{
+    background-color: aqua;
+    /* height: 400px; */
+}
+
+/* 
+
+div is a block level element which means it hold the entire space horizontally
+
+
+*/
+
+
+/* 
+when you mention two breakpoints in one media query then that css will only apply between that range
+
+example
+
+max-with 1200px
+min-with 900px
+
+
+
+*/
+
+@media screen and (max-width: 1200px) and (min-width: 900px){
+    .box{
+        width: 50%;
+        border: 2px solid red;
+        height: 300px;
+    }
+}
+
+/* @media only screen and (max-width: 768px){
+    .box{
+        width: 100%;
+    }
+} */
+
